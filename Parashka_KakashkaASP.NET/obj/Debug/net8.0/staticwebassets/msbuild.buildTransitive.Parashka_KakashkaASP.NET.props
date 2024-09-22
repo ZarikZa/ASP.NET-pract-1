@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Parashka_KakashkaASP.NET.props" />
+</Project>

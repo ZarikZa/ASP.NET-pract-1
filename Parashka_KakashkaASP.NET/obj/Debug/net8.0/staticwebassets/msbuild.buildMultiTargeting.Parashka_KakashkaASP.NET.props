@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Parashka_KakashkaASP.NET.props" />
+</Project>
