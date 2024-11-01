@@ -1,0 +1,34 @@
+﻿@model Parashka_KakashkaASP.NET.Models.Unitaz
+@{
+    ViewBag.Title = "Добавление унитаза";
+}
+
+<form asp-action="Create" asp-controller="CRUD" method="post">
+    <div class="form-group">
+        <label asp-for="UnitazName">Имя</label>
+        <input type="text" asp-for="UnitazName" />
+    </div>
+    <div class="form-group">
+        <label asp-for="UnitazPrice">Цена</label>
+        <input type="number" asp-for="UnitazPrice" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Infa">Инфа</label>
+        <input type="text" asp-for="Infa" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Img">Картинка</label>
+        <input type="text" asp-for="Img" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FkCountryProizvodstva">Старна производства</label>
+        <input type="number" asp-for="FkCountryProizvodstva" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FkUnitazType">Тип унитаза</label>
+        <input type="number" asp-for="FkUnitazType" />
+    </div>
+    <div>
+        <input type="submit" value="Отправить"/>
+    </div>
+</form>

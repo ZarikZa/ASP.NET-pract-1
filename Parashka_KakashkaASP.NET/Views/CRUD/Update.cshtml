@@ -1,0 +1,41 @@
+﻿@model Parashka_KakashkaASP.NET.Models.Unitaz
+@{
+    ViewData["Tittle"] = "Edit";
+}
+<h1>Изменение</h1>
+<h4>Унитазы</h4>
+<hr />
+<form asp-action="Update">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="UnitazId" />
+    <div class="form-group">
+        <label asp-for="UnitazName">Имя</label>
+        <input type="text" asp-for="UnitazName" />
+    </div>
+    <div class="form-group">
+        <label asp-for="UnitazPrice">Цена</label>
+        <input type="number" asp-for="UnitazPrice" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Infa">Инфа</label>
+        <input type="text" asp-for="Infa" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Img">Картинка</label>
+        <input type="text" asp-for="Img" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FkCountryProizvodstva">Старна производства</label>
+        <input type="number" asp-for="FkCountryProizvodstva" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FkUnitazType">Тип унитаза</label>
+        <input type="number" asp-for="FkUnitazType" />
+    </div>
+    <div>
+        <input type="submit" value="Save" />
+    </div>
+    </form>
+<div>
+    <a asp-action="Index">Назад</a>
+</div>

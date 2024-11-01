@@ -1,0 +1,30 @@
+﻿@model Parashka_KakashkaASP.NET.Models.Unitaz
+@{
+    ViewBag.Title = "Delete";
+}
+<div>
+    <dl>
+        <dt>Название</dt>
+        <dd>@Html.DisplayFor(model => model.UnitazName)</dd>
+
+        <dt>Цена</dt>
+        <dd>@Html.DisplayFor(model => model.UnitazPrice)</dd>
+
+        <dt>Инфа</dt>
+        <dd>@Html.DisplayFor(model => model.Infa)</dd>
+
+        <dt>Старна производства</dt>
+        <dd>@Html.DisplayFor(model => model.FkCountryProizvodstva)</dd>
+
+        <dt>Тип унитаза</dt>
+        <dd>@Html.DisplayFor(model => model.FkUnitazType)</dd>
+    </dl>
+
+    <div>
+        <form asp-controller="CRUD" asp-action="Delete" method="post">
+            <div>
+                <input type="submit" value="Удалить" />
+            </div>
+        </form>
+    </div>
+</div>

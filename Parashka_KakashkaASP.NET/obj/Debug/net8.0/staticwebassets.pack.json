@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\Parashka_KakashkaASP.NET.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\MSI KATANA\\source\\repos\\Parashka_KakashkaASP.NET\\Parashka_KakashkaASP.NET\\wwwroot\\css\\autoriz.css",
+      "PackagePath": "staticwebassets\\css\\autoriz.css"
+    },
+    {
+      "Id": "C:\\Users\\MSI KATANA\\source\\repos\\Parashka_KakashkaASP.NET\\Parashka_KakashkaASP.NET\\wwwroot\\css\\podrobneeStyle.css",
+      "PackagePath": "staticwebassets\\css\\podrobneeStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\MSI KATANA\\source\\repos\\Parashka_KakashkaASP.NET\\Parashka_KakashkaASP.NET\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
       "Id": "C:\\Users\\MSI KATANA\\source\\repos\\Parashka_KakashkaASP.NET\\Parashka_KakashkaASP.NET\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

@@ -6,18 +6,20 @@
     <title>@ViewData["Title"] - Parashka_KakashkaASP.NET</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet"/>
     <link rel="stylesheet" href="~/Parashka_KakashkaASP.NET.styles.css" asp-append-version="true" />
 </head>
 <body style="background-color:#76A7B5">
     <header style="background-color:#76A7B5">
-        <div style="background-color: #76A7B5" class="container">
+        <div style="background-color: #76A7B5; display: flex; align-items: center; justify-content: center;" class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a style="font-size:x-large" class="nav-link px-2 text-white" asp-action="Index">Главная</a></li>
-                    <li><a style="font-size:x-large" class="nav-link px-2 text-white" asp-action="Katalog">Каталог</a></li>
-                    <li><a style="font-size:x-large" class="nav-link px-2 text-white" asp-action="Korzina">Корзина</a></li>
-                    <li><a style="font-size:x-large" class="nav-link px-2 text-white" asp-action="Izbrannoe">Избранное</a></li>
+                    <li><a style="font-size:x-large" class="nav-link px-2 text-white" asp-action="Index" asp-controller="Home">Главная</a></li>
+                    <li><a style="font-size:x-large" class="nav-link px-2 text-white" asp-action="Katalog" asp-controller="Product">Каталог</a></li>
+                    <li><a style="font-size:x-large" class="nav-link px-2 text-white" asp-action="Korzina" asp-controller="Product">Корзина</a></li>
+                    <li><a style="font-size:x-large" class="nav-link px-2 text-white" asp-action="Izbrannoe" asp-controller="Product">Избранное</a></li>
+                    <li><a style="font-size:x-large" class="nav-link px-2 text-white" asp-action="Autoriz" asp-controller="Register">Автризация</a></li>
+                    <li><a style="font-size:x-large" class="nav-link px-2 text-white" asp-action="Index" asp-controller="CRUD">Добавление</a></li>
                 </ul>
             </div>
         </div>

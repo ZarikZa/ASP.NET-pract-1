@@ -1,0 +1,23 @@
+﻿@model Parashka_KakashkaASP.NET.Models.Unitaz
+   
+@{
+    ViewBag.Title = Model.UnitazName;
+}
+
+<h2>Унитаз @Model.UnitazName</h2>
+<div>
+    <dl>
+        <dt>Цена</dt>
+        <dd>@Model.UnitazPrice</dd>
+
+        <dt>Инфа</dt>
+        <dd>@Model.Infa</dd>
+
+        <dt>Старна производства</dt>
+        <dd>@Model.FkCountryProizvodstva</dd>
+
+        <dt>Тип унитаза</dt>
+        <dd>@Model.FkUnitazType</dd>
+
+    </dl>
+</div>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Parashka_KakashkaASP.NET")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+696dc8260e7ed7ae32f5a76a58caf99812c4ebf9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Parashka_KakashkaASP.NET")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Parashka_KakashkaASP.NET")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

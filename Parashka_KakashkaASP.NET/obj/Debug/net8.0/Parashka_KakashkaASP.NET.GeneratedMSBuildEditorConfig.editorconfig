@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Parashka_KakashkaASP.NET
 build_property.RootNamespace = Parashka_KakashkaASP.NET
@@ -18,24 +26,52 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\MSI KATANA\source\repos\Parashka_KakashkaASP.NET\Parashka_KakashkaASP.NET
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/CRUD/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JVRFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/CRUD/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JVRFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/CRUD/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JVRFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/CRUD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JVRFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/CRUD/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JVRFxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/Home/Izbrannoe.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJemJyYW5ub2UuY3NodG1s
+[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/Product/Izbrannoe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJemJyYW5ub2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/Home/Katalog.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxLYXRhbG9nLmNzaHRtbA==
+[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/Product/Katalog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxLYXRhbG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/Home/Korzina.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxLb3J6aW5hLmNzaHRtbA==
+[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/Product/Korzina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxLb3J6aW5hLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/Home/Podrobnee.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb2Ryb2JuZWUuY3NodG1s
+[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/Product/Podrobnee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQb2Ryb2JuZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/Register/Autoriz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcQXV0b3Jpei5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/Register/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MSI KATANA/source/repos/Parashka_KakashkaASP.NET/Parashka_KakashkaASP.NET/Views/Shared/Error.cshtml]

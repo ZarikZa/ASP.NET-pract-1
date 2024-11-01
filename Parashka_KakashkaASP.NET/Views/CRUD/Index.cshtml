@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Parashka_KakashkaASP.NET.Models.Unitaz>
+@{
+    ViewBag.Title = "Все унитазы";
+}
+
+<a asp-action="Create">Добавить унитаз</a>
+<table class="table">
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.UnitazName</td>
+            <td>@item.UnitazPrice</td>
+            <td>@item.Infa</td>
+            <td>
+               <a asp-action="Details" asp-controller="CRUD" asp-route-id="@item.UnitazId">Детали</a>
+               <a asp-action="Update" asp-controller="CRUD" asp-route-id="@item.UnitazId">Изменить</a>
+               <a asp-action="Delete" asp-controller="CRUD" asp-route-id="@item.UnitazId">Удалить</a>
+            </td>
+        </tr>
+    }
+
+</table>
