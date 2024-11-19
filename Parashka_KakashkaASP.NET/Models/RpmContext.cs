@@ -31,13 +31,13 @@ public partial class RpmContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-G9HLV3B\\SQLEXPRESS;Initial Catalog=RPM;Integrated Security=True;Trust Server Certificate=True");
+        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-G9HLV3B\\SQLEXPRESS;Initial Catalog=RPM;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Bill>(entity =>
         {
-            entity.HasKey(e => e.BillId).HasName("PK__Bills__CF6E7D4323769274");
+            entity.HasKey(e => e.BillId).HasName("PK__Bills__CF6E7D4389D6D420");
 
             entity.Property(e => e.BillId).HasColumnName("Bill_ID");
             entity.Property(e => e.DateBill)
@@ -60,9 +60,9 @@ public partial class RpmContext : DbContext
 
         modelBuilder.Entity<Client>(entity =>
         {
-            entity.HasKey(e => e.ClientId).HasName("PK__Clients__75A5D718104635CE");
+            entity.HasKey(e => e.ClientId).HasName("PK__Clients__75A5D718319FCCAF");
 
-            entity.HasIndex(e => e.Loginn, "UQ__Clients__D00D063FE20C0B0A").IsUnique();
+            entity.HasIndex(e => e.Loginn, "UQ__Clients__D00D063F93DA1CAC").IsUnique();
 
             entity.Property(e => e.ClientId).HasColumnName("Client_ID");
             entity.Property(e => e.ClientMiddleName)
@@ -78,15 +78,15 @@ public partial class RpmContext : DbContext
                 .HasMaxLength(30)
                 .IsUnicode(false);
             entity.Property(e => e.Pass)
-                .HasMaxLength(30)
+                .HasMaxLength(200)
                 .IsUnicode(false);
         });
 
         modelBuilder.Entity<CountryProizvodstva>(entity =>
         {
-            entity.HasKey(e => e.CountryProizvodstvaId).HasName("PK__CountryP__13DBAA3297C7EA06");
+            entity.HasKey(e => e.CountryProizvodstvaId).HasName("PK__CountryP__13DBAA32AC74AA29");
 
-            entity.HasIndex(e => e.CountryProizvodstva1, "UQ__CountryP__E0AD09536539C819").IsUnique();
+            entity.HasIndex(e => e.CountryProizvodstva1, "UQ__CountryP__E0AD09532C6BE0B9").IsUnique();
 
             entity.Property(e => e.CountryProizvodstvaId).HasColumnName("CountryProizvodstva_ID");
             entity.Property(e => e.CountryProizvodstva1)
@@ -97,9 +97,9 @@ public partial class RpmContext : DbContext
 
         modelBuilder.Entity<TypeOplati>(entity =>
         {
-            entity.HasKey(e => e.TypeOplatiId).HasName("PK__TypeOpla__7C35DD2B70DD7ED9");
+            entity.HasKey(e => e.TypeOplatiId).HasName("PK__TypeOpla__7C35DD2B866DED52");
 
-            entity.HasIndex(e => e.TypeOplati1, "UQ__TypeOpla__01578CADD76C80D8").IsUnique();
+            entity.HasIndex(e => e.TypeOplati1, "UQ__TypeOpla__01578CAD0B66A1B4").IsUnique();
 
             entity.Property(e => e.TypeOplatiId).HasColumnName("TypeOplati_ID");
             entity.Property(e => e.TypeOplati1)
@@ -110,7 +110,7 @@ public partial class RpmContext : DbContext
 
         modelBuilder.Entity<UniBill>(entity =>
         {
-            entity.HasKey(e => e.UniBillId).HasName("PK__UniBill__B686BD7828CD8DF4");
+            entity.HasKey(e => e.UniBillId).HasName("PK__UniBill__B686BD7824D7B727");
 
             entity.ToTable("UniBill");
 
@@ -131,9 +131,9 @@ public partial class RpmContext : DbContext
 
         modelBuilder.Entity<Unitaz>(entity =>
         {
-            entity.HasKey(e => e.UnitazId).HasName("PK__Unitazs__E9C5D7039BD48968");
+            entity.HasKey(e => e.UnitazId).HasName("PK__Unitazs__E9C5D70338BBB042");
 
-            entity.HasIndex(e => e.UnitazName, "UQ__Unitazs__E7AD3FF57E74ED83").IsUnique();
+            entity.HasIndex(e => e.UnitazName, "UQ__Unitazs__E7AD3FF5F3C3F6F4").IsUnique();
 
             entity.Property(e => e.UnitazId).HasColumnName("Unitaz_ID");
             entity.Property(e => e.FkCountryProizvodstva).HasColumnName("FK_CountryProizvodstva");
@@ -160,9 +160,9 @@ public partial class RpmContext : DbContext
 
         modelBuilder.Entity<UnitazType>(entity =>
         {
-            entity.HasKey(e => e.UnitazTypeId).HasName("PK__UnitazTy__BD619D1B3F9B2A64");
+            entity.HasKey(e => e.UnitazTypeId).HasName("PK__UnitazTy__BD619D1B410302F5");
 
-            entity.HasIndex(e => e.UnitazType1, "UQ__UnitazTy__0F6D55EEB0F27BF7").IsUnique();
+            entity.HasIndex(e => e.UnitazType1, "UQ__UnitazTy__0F6D55EE9F4F7B4C").IsUnique();
 
             entity.Property(e => e.UnitazTypeId).HasColumnName("UnitazType_ID");
             entity.Property(e => e.UnitazType1)

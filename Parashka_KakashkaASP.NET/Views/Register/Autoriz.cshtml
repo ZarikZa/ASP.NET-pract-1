@@ -20,21 +20,25 @@
                                 <h2 class="text-center font-weight-bold text-primary">Авторизация</h2>
                             </div>
                             <div class="card-body">
-                                <form>
+                                <form method="post">
                                     <div class="form-group">
                                         <label for="email" class="font-weight-bold">Email:</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Введите email">
-                                    </div>
+                                        <input name="email" type="email" required class="form-control" id="email" placeholder="Введите email">
+                                    </div> 
                                     <br />
                                     <div class="form-group">
                                         <label for="password" class="font-weight-bold">Пароль:</label>
-                                        <input type="password" class="form-control" id="password" placeholder="Введите пароль">
+                                        <input name="password" type="password" required class="form-control" id="password" placeholder="Введите пароль">
                                     </div>
                                     <div class="form-group">
                                         <br />
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-block rounded-pill font-weight-bold">Авторизоваться</button>
                                 </form>
+                                @if (ViewBag.ErrorMessage == null)
+                                {
+                                    @ViewBag.ErrorMessage;
+                                }
                                 <div class="text-center mt-3">
                                     <a asp-action="Register" asp-controller="Register" class="text-primary">Нет аккаунта? Зарегестрируйтесь!</a>
                                 </div>
@@ -45,5 +49,5 @@
             </div>
         </div>
     </div>
-</body>
+</body> 
 </html>

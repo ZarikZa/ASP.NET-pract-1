@@ -21,25 +21,33 @@
                                 <h2 class="text-center font-weight-bold text-primary">Регистрация</h2>
                             </div>
                             <div class="card-body">
-                                <form>
+                                <form method="post">
                                     <div class="form-group">
-                                        <label for="username" class="font-weight-bold">Имя пользователя:</label>
-                                        <input type="text" class="form-control" id="username" placeholder="Введите имя пользователя">
+                                        <label for="clientSurname" class="font-weight-bold">Фамилия пользователя:</label>
+                                        <input type="text" class="form-control" name="clientSurname" placeholder="Введите имя пользователя">
                                     </div>
                                     <div class="form-group">
-                                        <label for="email" class="font-weight-bold">Email:</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Введите email">
+                                        <label for="clientName" class="font-weight-bold">Имя пользователя:</label>
+                                        <input type="text" class="form-control" name="clientName" placeholder="Введите имя пользователя">
                                     </div>
                                     <div class="form-group">
-                                        <label for="password" class="font-weight-bold">Пароль:</label>
-                                        <input type="password" class="form-control" id="password" placeholder="Введите пароль">
+                                        <label for="clientMiddleName" class="font-weight-bold">Отчество пользователя:</label>
+                                        <input type="text" class="form-control" name="clientMiddleName" placeholder="Введите имя пользователя">
                                     </div>
                                     <div class="form-group">
-                                        <label for="confirm-password" class="font-weight-bold">Повторите пароль:</label>
-                                        <input type="password" class="form-control" id="confirm-password" placeholder="Повторите пароль">
+                                        <label for="loginn" class="font-weight-bold">Email:</label>
+                                        <input type="email" class="form-control" name="loginn" placeholder="Введите email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pass" class="font-weight-bold">Пароль:</label>
+                                        <input type="password" class="form-control" name="pass" placeholder="Введите пароль">
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-block rounded-pill font-weight-bold">Зарегистрироваться</button>
                                 </form>
+                                @if(ViewBag.ErrorMessage != null)
+                                {
+                                    @ViewBag.ErrorMessage;
+                                }
                                 <div class="text-center mt-3">
                                     <a asp-action="Autoriz" asp-controller="Register" class="text-primary">Уже есть аккаунт? Войдите!</a>
                                 </div>
